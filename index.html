@@ -190,10 +190,42 @@
                   id="telefono"
                   placeholder="+54 9 1160311537"
                   required
+                  pattern="\+54\s9\s[0-9]{2}\s[0-9]{8}"
                 />
               </label>
             </div>
           </fieldset>
+          <fieldset>
+            <div>
+              <label>¿Por que te quieres contactar?</label>
+              <select name="option" id="option">
+                <option value="Trabajo">Trabajo</option>
+                <option value="Duda">Duda</option>
+                <option value="Mas Informacion">Mas Informacion</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Acepto terminos y condiciones</label>
+              <input type="checkbox" name="acepto" id="acepto" required />
+            </div>
+
+
+            <div>
+
+              <datalist id="lenguajes">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+                <option value="C"></option>
+                <option value="C++"></option>
+              </datalist>
+              <label>¿Con que lenguaje quieres que te ayude?</label>
+              <input type="text" name="lenguaje" id="lenguaje" list="lenguajes">
+            </div>
+          </fieldset>
+
           <input type="submit" value="Enviar contacto" />
         </form>
       </section>
