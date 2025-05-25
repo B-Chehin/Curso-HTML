@@ -155,6 +155,7 @@
         <h2>Formulario de contacto</h2>
         <form action="" method="post">
           <fieldset>
+            <div>
             <label
               >Nombre:
               <input
@@ -164,18 +165,36 @@
                 placeholder="Bautista Chehin"
               />
             </label>
-          </fieldset>
-          <fieldset>
+          </div>
+          <div>
             <label
-              >Apellido:
+              >Email:
               <input
-                type="text"
-                name="apellido"
-                id="apellido"
-                placeholder="Bautista Chehin"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="chehinbautista@gmail.com"
+                required
               />
             </label>
+          </div>
           </fieldset>
+          <fieldset>
+            <legend>Informacion adicional</legend>
+            <div>
+              <label
+                >Telefono:
+                <input
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="+54 9 1160311537"
+                  required
+                />
+              </label>
+            </div>
+          </fieldset>
+          <input type="submit" value="Enviar contacto" />
         </form>
       </section>
     </main>
