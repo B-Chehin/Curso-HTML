@@ -40,6 +40,8 @@
         background-color: #ddd;
       }
     </style>
+
+    
   </head>
   <body>
     <!-- Header, se utiliza para encabezados -->
@@ -58,7 +60,29 @@
       </nav>
     </header>
 
-    <iframe
+    <dialog id="modal">
+      <h1>¿Sabias que puedes abrir una modal asi?</h1>
+      <p>Y es totalmente nativo</p>
+      <button id="close">Cerrar modal</button>
+    </dialog>
+
+    <button id="open">Ver mas informacion</button>
+
+
+    <script>
+      const modal = document.getElementById("modal");
+      const open = document.getElementById("open");
+      const close = document.getElementById("close");
+
+      open.addEventListener("click", () => {
+        modal.showModal();
+      });
+
+      close.addEventListener("click", () => {
+        modal.close();
+      });
+    </script>
+    <!-- <iframe
       style="width: 100%; aspect-ratio: 16/9; object-fit: cover"
       src="https://www.youtube.com/embed/3nYLTiY5skU?si=W8HTYxeFEcgKkkKo"
       title="YouTube video player"
@@ -66,7 +90,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
-    ></iframe>
+    ></iframe> -->
 
     <audio controls src="./videos/sample_960x400_ocean_with_audio.3gp"></audio>
     <video
