@@ -152,32 +152,51 @@
       </section>
 
       <section>
+        <h2>Preguntas frecuentes</h2>
+
+        <details open>
+          <summary>¿Que estudios tienes?</summary>
+          <p>Estudio en UBA, en el campo de la informatica</p>
+        </details>
+        <details>
+          <summary>¿Cuales son tus hobbies?</summary>
+          <p>
+            Me gusta jugar videojuegos, ver series y películas, y hacer
+            ejercicio
+          </p>
+        </details>
+        <details>
+          <summary>¿Cuales son tus tecnologias favoritas?</summary>
+          <p>JavaScript, Node.js, React, Python, HTML y CSS</p>
+        </details>
+      </section>
+      <section>
         <h2>Formulario de contacto</h2>
         <form action="" method="post">
           <fieldset>
             <div>
-            <label
-              >Nombre:
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Bautista Chehin"
-              />
-            </label>
-          </div>
-          <div>
-            <label
-              >Email:
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="chehinbautista@gmail.com"
-                required
-              />
-            </label>
-          </div>
+              <label
+                >Nombre:
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Bautista Chehin"
+                />
+              </label>
+            </div>
+            <div>
+              <label
+                >Email:
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="chehinbautista@gmail.com"
+                  required
+                />
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Informacion adicional</legend>
@@ -210,10 +229,8 @@
               <input type="checkbox" name="acepto" id="acepto" required />
             </div>
 
-
             <div>
-
-              <datalist id="lenguajes">
+              <datalist id="languages">
                 <option value="JavaScript"></option>
                 <option value="Python"></option>
                 <option value="Java"></option>
@@ -222,11 +239,16 @@
                 <option value="C++"></option>
               </datalist>
               <label>¿Con que lenguaje quieres que te ayude?</label>
-              <input type="text" name="lenguaje" id="lenguaje" list="lenguajes">
+              <input
+                type="text"
+                name="languages"
+                id="languages"
+                list="languages"
+              />
             </div>
           </fieldset>
 
-          <input type="submit" value="Enviar contacto" />
+          <button>Enviar contacto</button>
         </form>
       </section>
     </main>
