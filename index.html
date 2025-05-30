@@ -55,6 +55,21 @@
         color: red;
       }
 
+      .link:hover {
+        text-decoration: underline;
+        text-decoration: none;
+        color: #09f;
+      }
+       .link:active{
+        color: green;
+       }
+
+       input:focus{
+        border: 1px solid yellow;
+
+       }
+
+
       #open {
         background: #09f;
         color: white;
@@ -62,6 +77,16 @@
         padding: 1rem;
         border-radius: 5px;
         margin: 2px auto;
+      }
+      .description {
+        /*border: 1px solid red;
+        
+        HERENCIA:
+        initial (Valor inicial definido por las especifiaciones de css)
+        unset (Recetear el valor y le quitamos las propiedades heredadas)
+        revert (Revertir el valor a su valor original, salvo que haya un valor por defecto del navergador)
+        inherit (Heredar el valor del elemento padre)
+        */ 
       }
     </style>
   </head>
@@ -126,9 +151,10 @@
     <!-- Main, se utiliza para contenido principal -->
     <main>
       <!-- Parrafo, se utiliza para textos-->
-      <p>
+      <p class="description">
         +6 años de experiencia en
         <!-- Enfatizar texto--><strong>desarrollo Fullstack</strong>.
+        Proximamente Licenciado en ciencias de la computacion
       </p>
 
       <h2>Experiencia laboral</h2>
